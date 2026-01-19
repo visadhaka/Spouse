@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #dadce0; /* বর্ডার দিলে দেখতে একদম গুগলের মতো লাগবে */
+    border-radius: 8px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #202124;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px 15px;
+    font-size: 16px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-group label {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    color: #5f6368;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    background: #fff;
+    padding: 0 5px;
+    color: #1a73e8;
+}
+
+.input-group input:focus {
+    border: 2px solid #1a73e8;
+}
+
+.forgot-link {
+    display: block;
+    text-align: left;
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-account {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.next-btn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* --- নতুন যুক্ত করা স্টাইল --- */
+.user-display {
+    border: 1px solid #dadce0;
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.show-password {
+    text-align: left;
+    margin: 10px 0 30px 0;
+    font-size: 14px;
+}

